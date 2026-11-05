@@ -1,0 +1,120 @@
+/* Configuración básica de fuentes y reset */
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  background-color: #ffffff;
+  color: #333333;
+  margin: 0;
+  padding: 20px;
+}
+
+/* Contenedor principal */
+.contenedor {
+  max-width: 650px;
+  margin: 0 auto;
+}
+
+/* Título */
+h1 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #1a1a1a;
+}
+
+/* Formulario en línea */
+.form-inline {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 25px;
+}
+
+/* Inputs de texto y número */
+.form-inline input {
+  padding: 10px 14px;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  width: 100%;
+}
+
+.form-inline input::placeholder {
+  color: #9ca3af;
+}
+
+/* Ajuste específico para el ancho del input de Créditos */
+.form-inline input[type="number"] {
+  max-width: 120px;
+}
+
+/* Botón Agregar */
+.boton {
+  background-color: #0d6efd;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 10px 24px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.boton:hover {
+  background-color: #0b5ed7;
+}
+
+/* Tabla de Estudiantes */
+.tabla {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+/* Encabezados de la tabla */
+.tabla th {
+  text-align: left;
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: #1a1a1a;
+  padding: 12px 16px;
+}
+
+/* Celdas de datos */
+.tabla td {
+  padding: 14px 16px;
+  font-size: 0.9rem;
+  color: #333333;
+  border-bottom: 1px solid #f3f4f6;
+}
+
+/* Filas alternas (cebreado sutil gris/blanco) */
+.tabla tbody tr:nth-child(even) {
+  background-color: #f9fafb;
+}
+
+/* Estilos de las etiquetas de Estado (Badges) */
+.badge {
+  display: inline-block;
+  padding: 4px 12px;
+  border-radius: 12px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+/* Estado Matriculado */
+.badge.ok {
+  background-color: #198754;
+  color: #ffffff;
+}
+
+/* Estado Pendiente */
+.badge.pend {
+  background-color: #6c757d;
+  color: #ffffff;
+}
+
+img {
+  margin-top: 15px;
+  border-radius: 55px;
+}
